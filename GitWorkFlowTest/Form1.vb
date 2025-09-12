@@ -11,5 +11,6 @@
         'develop_b
         'develop_a
         'b 1
+        'b2
     End Sub
 End Class
