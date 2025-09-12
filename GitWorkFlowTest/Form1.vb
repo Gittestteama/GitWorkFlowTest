@@ -7,13 +7,6 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        'develop
-        'develop_b
-        'develop_a
-        'b 1
-        'b2
-        'b3
-        'A1
-        'D1
+
     End Sub
 End Class
