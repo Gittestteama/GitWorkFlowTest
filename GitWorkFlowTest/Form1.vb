@@ -10,6 +10,6 @@
         'RIST1
         'RIST2
         'REPI1
-
+        'RIST3
     End Sub
 End Class
