@@ -13,5 +13,6 @@
         'b 1
         'b2
         'b3
+        'b4
     End Sub
 End Class
