@@ -6,6 +6,8 @@
     <StartupObject>Sub Main</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
+    <AssemblyVersion>25.1.1.1</AssemblyVersion>
+    <FileVersion>25.1.1.1</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
