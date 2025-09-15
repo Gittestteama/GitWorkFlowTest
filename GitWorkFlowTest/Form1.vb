@@ -12,5 +12,6 @@
         'REPI1
         'RIST3
         'RIST4
+        'rist5
     End Sub
 End Class
