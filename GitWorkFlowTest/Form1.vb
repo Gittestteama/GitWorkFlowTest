@@ -7,6 +7,11 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        'develop
+        'RIST1
+        'RIST2
+        'REPI1
+        'RIST3
+        'RIST4
+        'rist5
     End Sub
 End Class
