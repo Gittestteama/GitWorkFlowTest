@@ -6,6 +6,8 @@
     <StartupObject>Sub Main</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
+    <AssemblyVersion>250.1.2.20</AssemblyVersion>
+    <FileVersion>250.1.2.20</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
