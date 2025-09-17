@@ -62,16 +62,20 @@
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
 ###############################################################################000783 KeepTargetVersion
-# Prevent merging AssemblyInfo files
-**/AssemblyInfo.cs merge=binary
-**/Properties/AssemblyInfo.cs merge=binary
-**/AssemblyInfo.vb merge=binary
+# =========================
+# .NET Project - Merge rules
+# =========================
 
-# Alternative: completely disable merging
- **/AssemblyInfo.cs -merge
- **/Properties/AssemblyInfo.cs -merge
+# Assembly version ไม่ต้อง merge เอาของ branch ปัจจุบันเท่านั้น
+Properties/AssemblyInfo.cs merge=ours
+Directory.Build.props merge=ours
 
-# สำหรับไฟล์ version อื่นๆ
-**/Version.cs merge=binary
-**/GlobalAssemblyInfo.cs merge=binary
+# ถ้าใช้ไฟล์ VersionInfo แยกไว้
+**/VersionInfo.cs merge=ours
+
+# ป้องกันการ merge auto ในไฟล์ .csproj (บางทีมี version number)
+*.csproj merge=ours
+
+# ป้องกัน NuGet package version ถูก merge ตาม branch อื่น
+*.nuspec merge=ours
 ###############################################################################
