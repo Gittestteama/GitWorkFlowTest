@@ -68,8 +68,8 @@
 **/AssemblyInfo.vb merge=binary
 
 # Alternative: completely disable merging
-# **/AssemblyInfo.cs -merge
- #**/Properties/AssemblyInfo.cs -merge
+ **/AssemblyInfo.cs -merge
+ **/Properties/AssemblyInfo.cs -merge
 
 # สำหรับไฟล์ version อื่นๆ
 **/Version.cs merge=binary
