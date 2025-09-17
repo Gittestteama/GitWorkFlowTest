@@ -1,31 +1,37 @@
-<Project>
-  <PropertyGroup>
-    <!-- Default (กันเผื่อ) -->
-    <VersionPrefix>0.0.0</VersionPrefix>
-    <AssemblyVersion>0.0.0.0</AssemblyVersion>
-    <FileVersion>0.0.0.0.0</FileVersion>
-  </PropertyGroup>
+<!--<Project>
+  --><!--<PropertyGroup>
+     --><!--Default (กันเผื่อ)--><!-- 
+    <VersionPrefix>0.5.0</VersionPrefix>
+    <AssemblyVersion>0.5.0.0</AssemblyVersion>
+    <FileVersion>0.5.0.0.0</FileVersion>
+  </PropertyGroup>--><!--
 
-  <!-- DevelopRIST: Major = 1 -->
-  <PropertyGroup Condition="'$(GIT_BRANCH)' == 'DevelopRIST'">
-    <VersionPrefix>/251.0.0</VersionPrefix>
+   --><!--DevelopRIST: Major = 1--><!-- 
+  --><!--<PropertyGroup>
+    <VersionPrefix>251.0.0</VersionPrefix>
     <AssemblyVersion>251.0.0.0</AssemblyVersion>
     <FileVersion>251.0.0.0</FileVersion>
-  </PropertyGroup>
+  </PropertyGroup>--><!--
 
-  <!-- DevelopREPI: Major = 2 -->
+   --><!--DevelopREPI: Major = 2--><!-- 
   <PropertyGroup Condition="'$(GIT_BRANCH)' == 'DevelopREPI'">
     <VersionPrefix>252.0.0</VersionPrefix>
     <AssemblyVersion>252.0.0.0</AssemblyVersion>
     <FileVersion>252.0.0.0</FileVersion>
   </PropertyGroup>
 
-  <!-- Develop: Major = 0 -->
+   --><!--Develop: Major = 0--><!-- 
   <PropertyGroup Condition="'$(GIT_BRANCH)' == 'Develop'">
     <VersionPrefix>250.0.0</VersionPrefix>
     <AssemblyVersion>250.0.0.0</AssemblyVersion>
     <FileVersion>250.0.0.0</FileVersion>
-  </PropertyGroup>
+  </PropertyGroup>--><!--
  
+</Project>-->
+<Project>
+  <PropertyGroup>
+    <Version>251.0.0.0</Version>
+    <AssemblyVersion>251.0.0.0</AssemblyVersion>
+    <FileVersion>251.0.0.0</FileVersion>
+  </PropertyGroup>
 </Project>
-
