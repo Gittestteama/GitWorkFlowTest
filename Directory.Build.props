@@ -1,7 +1,16 @@
+<!--For RIST-->
+<!--<Project>
+  <PropertyGroup>
+    <Version>251.0.0.0</Version>
+    <AssemblyVersion>251.0.0.17/</AssemblyVersion>
+    <FileVersion>251.0.0.2</FileVersion>
+  </PropertyGroup>
+</Project>-->
+<!--For REPI-->
 <Project>
   <PropertyGroup>
     <Version>251.0.0.0</Version>
-    <AssemblyVersion>251.0.0.15</AssemblyVersion>
+    <AssemblyVersion>250.0.0.15/</AssemblyVersion>
     <FileVersion>251.0.0.2</FileVersion>
   </PropertyGroup>
 </Project>
