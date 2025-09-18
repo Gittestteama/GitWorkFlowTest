@@ -1,4 +1,4 @@
-name: Block Directory.Build.props changes on develop
+name: Block Directory.Build.props changes on Develop
 
 # ทำงานเมื่อมี PR ไปยัง branch develop
 on:
