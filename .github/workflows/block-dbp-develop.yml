@@ -4,7 +4,7 @@ name: Block Directory.Build.props changes on Develop
 on:
   pull_request:
     branches:
-      - Develop
+      - origin/Develop
     paths:
       - 'Directory.Build.props'
 
