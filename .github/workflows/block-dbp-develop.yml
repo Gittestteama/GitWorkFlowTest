@@ -3,8 +3,7 @@ name: Block Directory.Build.props changes on Develop
 # ทำงานเมื่อมี PR ไปยัง branch develop
 on:
   pull_request:
-    branches:
-      - origin/Develop
+    branches: [Develop]
     paths:
       - 'Directory.Build.props'
 
