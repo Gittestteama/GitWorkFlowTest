@@ -1,9 +1,9 @@
-name: Block Directory.Build.props changes on Develop
+name: Block Directory.Build.props changes on develop
 
-# ทำงานเมื่อมี PR ไปยัง branch develop
 on:
   pull_request:
-    branches: [Develop]
+    branches:
+      - develop
     paths:
       - 'Directory.Build.props'
 
@@ -13,11 +13,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: ${{ github.head_ref }}
 
       - name: Prevent Directory.Build.props modification
         run: |
-          # ตรวจสอบไฟล์ที่แก้ใน PR
-          if git diff --name-only origin/${{ github.base_ref }} | grep -q 'Directory.Build.props'; then
+          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -q 'Directory.Build.props'; then
             echo "❌ Directory.Build.props cannot be changed in PR to develop!"
             exit 1
           fi
