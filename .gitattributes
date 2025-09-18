@@ -70,8 +70,9 @@
 
 # Assembly version ไม่ต้อง merge เอาของ branch ปัจจุบันเท่านั้น
 Properties/AssemblyInfo.cs merge=ours
-Directory.Build.props -merge
+#Directory.Build.props -merge
 #Directory.Build.props merge=binary
+Directory.Build.props=ours
 
 # ถ้าใช้ไฟล์ VersionInfo แยกไว้
 **/VersionInfo.cs merge=ours
