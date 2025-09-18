@@ -70,7 +70,7 @@
 
 # Assembly version ไม่ต้อง merge เอาของ branch ปัจจุบันเท่านั้น
 Properties/AssemblyInfo.cs merge=ours
-Directory.Build.props merge=ours
+GitWorkFlowTest/Directory.Build.props merge=ours
 #Directory.Build.props merge=binary
 
 # ถ้าใช้ไฟล์ VersionInfo แยกไว้
