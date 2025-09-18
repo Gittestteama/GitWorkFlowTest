@@ -13,5 +13,6 @@
         'RIST3
         'RIST4
         'rist5
+        'RIST6
     End Sub
 End Class
