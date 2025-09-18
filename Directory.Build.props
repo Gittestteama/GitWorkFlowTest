@@ -30,8 +30,8 @@
 </Project>-->
 <Project>
   <PropertyGroup>
-    <Version>251.0.0.0</Version>
-    <AssemblyVersion>251.0.0.0</AssemblyVersion>
-    <FileVersion>251.0.0.0</FileVersion>
+    <Version>250.0.0.0</Version>
+    <AssemblyVersion>250.0.0.0</AssemblyVersion>
+    <FileVersion>250.0.0.0</FileVersion>
   </PropertyGroup>
 </Project>
