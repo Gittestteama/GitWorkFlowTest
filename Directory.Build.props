@@ -19,8 +19,10 @@
 <Project>
   <PropertyGroup>
     <Version>251.0.0.0</Version>
-    <AssemblyVersion>251.0.0.28</AssemblyVersion>
-    <FileVersion>251.0.0.28</FileVersion>
+
+    <AssemblyVersion>251.0.0.29</AssemblyVersion>
+    <FileVersion>251.0.0.29</FileVersion>
+
   </PropertyGroup>
 </Project>
 <!--For REPI-->
