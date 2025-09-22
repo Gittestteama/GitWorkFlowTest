@@ -69,20 +69,20 @@
 # =========================
 
 # Assembly version ไม่ต้อง merge เอาของ branch ปัจจุบันเท่านั้น
-Properties/AssemblyInfo.cs merge=ours
+#Properties/AssemblyInfo.cs merge=ours
 Directory.Build.props -merge
 
 #Directory.Build.props=ours
 #Directory.Build.props merge=binary
 
 # ถ้าใช้ไฟล์ VersionInfo แยกไว้
-**/VersionInfo.cs merge=ours
+#**/VersionInfo.cs merge=ours
 
 # ป้องกันการ merge auto ในไฟล์ .csproj (บางทีมี version number)
-*.csproj merge=ours
+#*.csproj merge=ours
 
 # ป้องกัน NuGet package version ถูก merge ตาม branch อื่น
-*.nuspec merge=ours
+#*.nuspec merge=ours
 
 
 ###############################################################################
