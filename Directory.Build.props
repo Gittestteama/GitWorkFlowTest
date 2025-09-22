@@ -1,25 +1,33 @@
 <!--For Master-->
 <!--<Project>
   <PropertyGroup>
-    <Version>251.0.0.0</Version>
+    <Version>250.0.0.0</Version>
     <AssemblyVersion>250.0.0.0</AssemblyVersion>
     <FileVersion>251.0.0.2</FileVersion>
   </PropertyGroup>
 </Project>-->
-<!--For RIST-->
+<!--For Develop-->
 <Project>
+  <PropertyGroup>
+    <Version>250.0.0.0</Version>
+    <AssemblyVersion>250.0.0.0</AssemblyVersion>
+    <FileVersion>251.0.0.2</FileVersion>
+  </PropertyGroup>
+</Project>
+<!--For RIST-->
+<!--<Project>
   <PropertyGroup>
     <Version>251.0.0.0</Version>
     <AssemblyVersion>251.0.0.17/</AssemblyVersion>
     <FileVersion>251.0.0.2</FileVersion>
   </PropertyGroup>
-</Project>
+</Project>-->
 <!--For REPI-->
 <!--<Project>
   <PropertyGroup>
-    <Version>251.0.0.0</Version>
+    <Version>252.0.0.0</Version>
     <AssemblyVersion>252.0.0.6</AssemblyVersion>
-    <FileVersion>251.0.0.2</FileVersion>
+    <FileVersion>252.0.0.2</FileVersion>
   </PropertyGroup>
 </Project>-->
 
