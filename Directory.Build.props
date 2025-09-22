@@ -1,4 +1,12 @@
 <!--For Master-->
+<Project>
+  <PropertyGroup>
+    <Version>250.0.0.0</Version>
+    <AssemblyVersion>250.0.0.0</AssemblyVersion>
+    <FileVersion>250.0.0.2</FileVersion>
+  </PropertyGroup>
+</Project>
+<!--For Develop-->
 <!--<Project>
   <PropertyGroup>
     <Version>250.0.0.0</Version>
@@ -6,14 +14,6 @@
     <FileVersion>251.0.0.2</FileVersion>
   </PropertyGroup>
 </Project>-->
-<!--For Develop-->
-<Project>
-  <PropertyGroup>
-    <Version>250.0.0.0</Version>
-    <AssemblyVersion>250.0.0.0</AssemblyVersion>
-    <FileVersion>251.0.0.2</FileVersion>
-  </PropertyGroup>
-</Project>
 <!--For RIST-->
 <!--<Project>
   <PropertyGroup>
