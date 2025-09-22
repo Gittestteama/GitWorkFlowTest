@@ -1,2 +1,0 @@
-- name: Build
-  run: dotnet build /p:GIT_BRANCH=${{ github.ref_name }}
