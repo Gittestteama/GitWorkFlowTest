@@ -69,7 +69,9 @@
 # =========================
 
 # Assembly version ไม่ต้อง merge เอาของ branch ปัจจุบันเท่านั้น
-#Properties/AssemblyInfo.cs merge=ours
+
+#*Properties/AssemblyInfo.cs merge=ours
+
 Directory.Build.props -merge
 
 #Directory.Build.props=ours
