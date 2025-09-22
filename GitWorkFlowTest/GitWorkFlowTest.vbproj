@@ -7,9 +7,11 @@
     <StartupObject>Sub Main</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
+
     <!--<AssemblyVersion></AssemblyVersion>
     <FileVersion></FileVersion>-->
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+
   </PropertyGroup>
 
   <ItemGroup>
