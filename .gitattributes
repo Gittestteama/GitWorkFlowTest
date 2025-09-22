@@ -72,9 +72,9 @@
 
 #*Properties/AssemblyInfo.cs merge=ours
 
-Directory.Build.props -merge
+#Directory.Build.props -merge
 
-#Directory.Build.props=ours
+Directory.Build.props=ours
 #Directory.Build.props merge=binary
 
 # ถ้าใช้ไฟล์ VersionInfo แยกไว้
