@@ -11,6 +11,7 @@
     <!--<AssemblyVersion></AssemblyVersion>
     <FileVersion></FileVersion>-->
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <AssemblyVersion>251.0.0.18</AssemblyVersion>
 
   </PropertyGroup>
 
