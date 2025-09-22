@@ -8,21 +8,21 @@
   </PropertyGroup>
 </Project>-->
 <!--For Develop-->
-<!--<Project>
+<Project>
   <PropertyGroup>
     <Version>250.0.0.0</Version>
     <AssemblyVersion>250.0.0.15</AssemblyVersion>
     <FileVersion>251.0.0.15</FileVersion>
   </PropertyGroup>
-</Project>-->
+</Project>
 <!--For RIST-->
-<Project>
+<!--<Project>
   <PropertyGroup>
     <Version>251.0.0.0</Version>
     <AssemblyVersion>251.0.0.20</AssemblyVersion>
     <FileVersion>251.0.0.20</FileVersion>
   </PropertyGroup>
-</Project>
+</Project>-->
 <!--For REPI-->
 <!--<Project>
   <PropertyGroup>
