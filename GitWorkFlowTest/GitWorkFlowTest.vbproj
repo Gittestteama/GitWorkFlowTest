@@ -1,13 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+   
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <StartupObject>Sub Main</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
-    <AssemblyVersion>1.1.1.2 </AssemblyVersion>
-    <FileVersion>1.1.1.2</FileVersion>
+
+    <!--<AssemblyVersion></AssemblyVersion>
+    <FileVersion></FileVersion>-->
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+
   </PropertyGroup>
 
   <ItemGroup>
