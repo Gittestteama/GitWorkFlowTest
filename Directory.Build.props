@@ -1,69 +1,54 @@
+<!--File Version Control__000783 Prasarn.T-->
 
-<!--For Master--><!--
---><!--<Project>
-  <PropertyGroup>
-    <Version>250.0.0.0</Version>
-    <AssemblyVersion>250.0.0.0</AssemblyVersion>
-    <FileVersion>251.0.0.2</FileVersion>
-  </PropertyGroup>
-</Project>--><!--
---><!--For Develop--><!--
---><!--<Project>
-  <PropertyGroup>
-    <Version>250.0.0.0</Version>
-    <AssemblyVersion>250.0.0.17</AssemblyVersion>
-    <FileVersion>251.0.0.17</FileVersion>
-  </PropertyGroup>
-</Project>--><!--
---><!--For RIST--><!--
 <Project>
   <PropertyGroup>
-    <Version>251.0.0.0</Version>
-    <AssemblyVersion>251.0.0.31</AssemblyVersion>
-    <FileVersion>251.0.0.31</FileVersion>
-  </PropertyGroup>
-</Project>
---><!--For REPI--><!--
---><!--<Project>
-  <PropertyGroup>
-    <Version>252.0.0.0</Version>
-    <AssemblyVersion>252.0.0.6</AssemblyVersion>
-    <FileVersion>252.0.0.2</FileVersion>
-  </PropertyGroup>
-</Project>-->
-<Project>
-  <PropertyGroup>
-    <!-- รับค่า Branch จาก Command Line หรือ Environment -->
-    <!--<BranchName Condition="'$(BranchName)' == ''">local</BranchName>-->
     <BranchName Condition="Exists('$(MSBuildThisFileDirectory).git/HEAD')"> $([System.IO.File]::ReadAllText('$(MSBuildThisFileDirectory).git/HEAD').Replace('ref: refs/heads/','').Trim()) </BranchName>
-  
   </PropertyGroup>
-  <!-- ใช้ Choose สำหรับการกำหนดเงื่อนไข -->
   <Choose>
-    <When Condition="'$(BranchName)' == ' Develop '">
+    <When Condition="'$(BranchName)' == ' master '">
       <PropertyGroup>
-        <FileVersion>3.4.5.7</FileVersion>
-        <AssemblyVersion>3.4.5.7</AssemblyVersion>
-        <Version>3.4.5.7</Version>
+        <FileVersion>250.4.5.7</FileVersion>
+        <AssemblyVersion>$(FileVersion)</AssemblyVersion>
+        <Version>$(FileVersion.Split('.')[0]).$(FileVersion.Split('.')[1]).$(FileVersion.Split('.')[2])</Version>
+        <InformationalVersion>$(Version).($(BranchName))</InformationalVersion>
       </PropertyGroup>
     </When>
-    <When Condition="'$(BranchName)' == ''">
+    <When Condition="'$(BranchName)' == ' Develop '">
       <PropertyGroup>
-        <FileVersion>2.5.3.6</FileVersion>
-        <AssemblyVersion>2.5.3.6</AssemblyVersion>
-        <Version>2.5.3.6</Version>
+        <FileVersion>250.4.5.7</FileVersion>
+        <AssemblyVersion>$(FileVersion)</AssemblyVersion>
+        <Version>$(FileVersion.Split('.')[0]).$(FileVersion.Split('.')[1]).$(FileVersion.Split('.')[2])</Version>
+        <InformationalVersion>$(Version).($(BranchName))</InformationalVersion>
+      </PropertyGroup>
+    </When>
+    <!--For RIST-->
+    <When Condition="'$(BranchName)' == ' DevelopRIST '">
+      <PropertyGroup>
+        <FileVersion>251.5.3.6</FileVersion>
+        <!--RIST Change Vesion Here-->
+        <AssemblyVersion>$(FileVersion)</AssemblyVersion>
+        <Version>$(FileVersion.Split('.')[0]).$(FileVersion.Split('.')[1]).$(FileVersion.Split('.')[2])</Version>
+        <InformationalVersion>$(Version).($(BranchName))</InformationalVersion>
+      </PropertyGroup>
+    </When>
+    <!--For REPI-->
+    <When Condition="'$(BranchName)' == ' DevelopREPI '">
+      <PropertyGroup>
+        <FileVersion>252.5.3.7</FileVersion>
+        <!--REPI Change Vesion Here-->
+        <AssemblyVersion>$(FileVersion)</AssemblyVersion>
+        <Version>$(FileVersion.Split('.')[0]).$(FileVersion.Split('.')[1]).$(FileVersion.Split('.')[2])</Version>
+        <InformationalVersion>$(Version).($(BranchName))</InformationalVersion>
       </PropertyGroup>
     </When>
     <Otherwise>
       <PropertyGroup>
-        <FileVersion>1.0.1.0</FileVersion>
-        <AssemblyVersion>1.0.1.0</AssemblyVersion>
-        <Version>1.0.1.0</Version>
+        <InformationalVersion>(VerConditionNg)</InformationalVersion>
       </PropertyGroup>
     </Otherwise>
   </Choose>
   <Target Name="DisplayVersionInfo" BeforeTargets="BeforeBuild">
-    <Message Text="Building for branch:_$(BranchName)_with version: $(Version)" Importance="high" />
+    <Message Text="Building for branch:_$(BranchName)_with version: $(FileVersion) Infor:$(InformationalVersion)" Importance="high" />
   </Target>
 </Project>
 
