@@ -1,3 +1,58 @@
+<<<<<<< HEAD
+<!--File Version Control__000783 Prasarn.T-->
+
+<Project>
+  <PropertyGroup>
+    <BranchName Condition="Exists('$(MSBuildThisFileDirectory).git/HEAD')"> $([System.IO.File]::ReadAllText('$(MSBuildThisFileDirectory).git/HEAD').Replace('ref: refs/heads/','').Trim()) </BranchName>
+  </PropertyGroup>
+  <Choose>
+    <When Condition="'$(BranchName)' == ' master '">
+      <PropertyGroup>
+        <FileVersion>250.4.5.7</FileVersion>
+        <AssemblyVersion>$(FileVersion)</AssemblyVersion>
+        <Version>$(FileVersion.Split('.')[0]).$(FileVersion.Split('.')[1]).$(FileVersion.Split('.')[2])</Version>
+        <InformationalVersion>$(Version).($(BranchName))</InformationalVersion>
+      </PropertyGroup>
+    </When>
+    <When Condition="'$(BranchName)' == ' Develop '">
+      <PropertyGroup>
+        <FileVersion>250.4.5.7</FileVersion>
+        <AssemblyVersion>$(FileVersion)</AssemblyVersion>
+        <Version>$(FileVersion.Split('.')[0]).$(FileVersion.Split('.')[1]).$(FileVersion.Split('.')[2])</Version>
+        <InformationalVersion>$(Version).($(BranchName))</InformationalVersion>
+      </PropertyGroup>
+    </When>
+    <!--For RIST-->
+    <When Condition="'$(BranchName)' == ' DevelopRIST '">
+      <PropertyGroup>
+        <FileVersion>251.5.3.6</FileVersion>
+        <!--RIST Change Vesion Here-->
+        <AssemblyVersion>$(FileVersion)</AssemblyVersion>
+        <Version>$(FileVersion.Split('.')[0]).$(FileVersion.Split('.')[1]).$(FileVersion.Split('.')[2])</Version>
+        <InformationalVersion>$(Version).($(BranchName))</InformationalVersion>
+      </PropertyGroup>
+    </When>
+    <!--For REPI-->
+    <When Condition="'$(BranchName)' == ' DevelopREPI '">
+      <PropertyGroup>
+        <FileVersion>252.5.3.7</FileVersion>
+        <!--REPI Change Vesion Here-->
+        <AssemblyVersion>$(FileVersion)</AssemblyVersion>
+        <Version>$(FileVersion.Split('.')[0]).$(FileVersion.Split('.')[1]).$(FileVersion.Split('.')[2])</Version>
+        <InformationalVersion>$(Version).($(BranchName))</InformationalVersion>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <InformationalVersion>(VerConditionNg)</InformationalVersion>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+  <Target Name="DisplayVersionInfo" BeforeTargets="BeforeBuild">
+    <Message Text="Building for branch:_$(BranchName)_with version: $(FileVersion) Infor:$(InformationalVersion)" Importance="high" />
+  </Target>
+</Project>
+=======
 <!--File Version Control__000783 Prasarn.T-->
 
 <Project>
@@ -57,3 +112,4 @@
 
 
 
+>>>>>>> Develop
