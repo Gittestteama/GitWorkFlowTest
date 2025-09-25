@@ -11,8 +11,7 @@
     <!--<AssemblyVersion></AssemblyVersion>
     <FileVersion></FileVersion>-->
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-    <AssemblyVersion />
-    <FileVersion />
+  
    
   </PropertyGroup>
 
