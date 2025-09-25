@@ -7,13 +7,13 @@
   <Choose>
     <When Condition="'$(BranchName)' == ' master '">
       <PropertyGroup>
-        <FileVersion>250.4.5.7</FileVersion>
+        <FileVersion>250.4.5.7</FileVersion>        <!--master  Change Vesion Here-->
         <AssemblyVersion>$(FileVersion)</AssemblyVersion>
         <Version>$(FileVersion.Split('.')[0]).$(FileVersion.Split('.')[1]).$(FileVersion.Split('.')[2])</Version>
         <InformationalVersion>$(Version).($(BranchName))</InformationalVersion>
       </PropertyGroup>
     </When>
-    <When Condition="'$(BranchName)' == ' Develop '">
+    <When Condition="'$(BranchName)' == ' Develop '">      <!--Develop  Change Vesion Here-->
       <PropertyGroup>
         <FileVersion>250.4.5.7</FileVersion>
         <AssemblyVersion>$(FileVersion)</AssemblyVersion>
@@ -23,9 +23,8 @@
     </When>
     <!--For RIST-->
     <When Condition="'$(BranchName)' == ' DevelopRIST '">
-      <PropertyGroup>
-        <FileVersion>251.5.3.6</FileVersion>
-        <!--RIST Change Vesion Here-->
+      <PropertyGroup>        
+        <FileVersion>251.5.3.6</FileVersion>      <!--RIST Change Vesion Here-->
         <AssemblyVersion>$(FileVersion)</AssemblyVersion>
         <Version>$(FileVersion.Split('.')[0]).$(FileVersion.Split('.')[1]).$(FileVersion.Split('.')[2])</Version>
         <InformationalVersion>$(Version).($(BranchName))</InformationalVersion>
@@ -33,9 +32,8 @@
     </When>
     <!--For REPI-->
     <When Condition="'$(BranchName)' == ' DevelopREPI '">
-      <PropertyGroup>
-        <FileVersion>252.5.3.7</FileVersion>
-        <!--REPI Change Vesion Here-->
+      <PropertyGroup>       
+        <FileVersion>252.5.3.7</FileVersion>       <!--REPI Change Vesion Here-->
         <AssemblyVersion>$(FileVersion)</AssemblyVersion>
         <Version>$(FileVersion.Split('.')[0]).$(FileVersion.Split('.')[1]).$(FileVersion.Split('.')[2])</Version>
         <InformationalVersion>$(Version).($(BranchName))</InformationalVersion>
