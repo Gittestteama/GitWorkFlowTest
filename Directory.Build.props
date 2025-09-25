@@ -1,4 +1,4 @@
-<!--File Version Control__000783 Prasarn.T--> 
+<!--File Version Control__000783 Prasarn.T-->
 
 <Project>
   <PropertyGroup>
@@ -21,19 +21,21 @@
         <InformationalVersion>$(Version).($(BranchName))</InformationalVersion>
       </PropertyGroup>
     </When>
-  <!--For RIST-->
+    <!--For RIST-->
     <When Condition="'$(BranchName)' == ' DevelopRIST '">
       <PropertyGroup>
-        <FileVersion>251.5.3.6</FileVersion>        <!--RIST Change Vesion Here-->
+        <FileVersion>251.5.3.6</FileVersion>
+        <!--RIST Change Vesion Here-->
         <AssemblyVersion>$(FileVersion)</AssemblyVersion>
-        <Version>$(FileVersion.Split('.')[0]).$(FileVersion.Split('.')[1]).$(FileVersion.Split('.')[2])</Version>    
+        <Version>$(FileVersion.Split('.')[0]).$(FileVersion.Split('.')[1]).$(FileVersion.Split('.')[2])</Version>
         <InformationalVersion>$(Version).($(BranchName))</InformationalVersion>
       </PropertyGroup>
     </When>
- <!--For REPI-->
+    <!--For REPI-->
     <When Condition="'$(BranchName)' == ' DevelopREPI '">
       <PropertyGroup>
-        <FileVersion>252.5.3.6</FileVersion>      <!--REPI Change Vesion Here-->
+        <FileVersion>252.5.3.7</FileVersion>
+        <!--REPI Change Vesion Here-->
         <AssemblyVersion>$(FileVersion)</AssemblyVersion>
         <Version>$(FileVersion.Split('.')[0]).$(FileVersion.Split('.')[1]).$(FileVersion.Split('.')[2])</Version>
         <InformationalVersion>$(Version).($(BranchName))</InformationalVersion>
@@ -49,7 +51,6 @@
     <Message Text="Building for branch:_$(BranchName)_with version: $(FileVersion) Infor:$(InformationalVersion)" Importance="high" />
   </Target>
 </Project>
-
 
 
 
