@@ -47,10 +47,3 @@
     <Message Text="Building for branch:_$(BranchName)_with version: $(FileVersion) Infor:$(InformationalVersion)" Importance="high" />
   </Target>
 </Project>
-
-
-
-
-
-
->>>>>>> Develop
