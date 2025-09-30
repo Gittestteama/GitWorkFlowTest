@@ -11,7 +11,7 @@
         <InformationalVersion>$(Version).($(BranchName))</InformationalVersion>
       </PropertyGroup>
     </When>
-    <When Condition="'$(BranchName)' == 'Develop '"> 
+    <When Condition="'$(BranchName)' == ' Develop '"> 
       <PropertyGroup>
         <FileVersion>250.4.5.7</FileVersion>        <!--Develop Branch (Integration) Change Vesion Here-->
         <AssemblyVersion>$(FileVersion)</AssemblyVersion>
